@@ -33,7 +33,8 @@ class _SecondState extends State<Second> {
                     backgroundColor: Colors.blue,
                     textStyle: const TextStyle(fontSize: 20)),
                 onPressed: () {
-
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => const Third()));
                 },
                 child: const Text('Login', style: TextStyle(color: Colors.white)),
               ),
@@ -46,7 +47,8 @@ class _SecondState extends State<Second> {
                     backgroundColor: Colors.blue,
                     textStyle: const TextStyle(fontSize: 20)),
                 onPressed: () {
-
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) => const First()));
                 },
                 child: const Text('Sign Up', style: TextStyle(color: Colors.white)),
               ),
