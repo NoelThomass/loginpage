@@ -52,12 +52,13 @@ class _ThirdState extends State<Third> {
                   backgroundColor: Colors.blue,
                   textStyle: const TextStyle(fontSize: 20)),
               onPressed: () {
-
+                Navigator.pushReplacement(context,
+                    MaterialPageRoute(builder: (context) => const First()));
               },
               child: const Text('Login', style: TextStyle(color: Colors.white)),
             ),
           ),
-          TextButton(onPressed: (){}, child: Text('Already have an account? Login',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),))
+          TextButton(onPressed: (){}, child: Text("Don't have an account? Sign Up",style: TextStyle(fontWeight: FontWeight.bold,color: Colors.black),))
 
         ],
       ),
